@@ -41,7 +41,7 @@ The credential must have access to this Portkey endpoint and model alias. A regu
 
 1. Open `Project1_Texas_Data_Broker_Compliance.ipynb` in Google Colab.
 2. Configure the API secret as described above.
-3. Have `Data Broker Registration.xlsx` and `Criteria.xlsx` ready to upload. The registry filename matches the loader's `*Broker*Registration*.xlsx` pattern. Keep its contents unchanged: the first three rows contain metadata, and the fourth row contains column headers.
+3. Have `Data Broker Registration.xlsx` and `Criteria.xlsx` ready to upload. Keep its contents unchanged: the first three rows contain metadata, and the fourth row contains column headers.
 4. Run the cells sequentially through Section 9. Upload both workbooks when prompted, or place them in the Colab working directory beforehand.
 5. In Section 9, select a company and click **Run compliance check**.
 6. Inspect the findings and evidence, review the approval choices, and click **Generate revision plan from approved gaps** when ready.
@@ -57,7 +57,7 @@ Run the evaluation cells in order. The human-evaluation analysis below is option
 
 ### Optional human evaluation
 
-The repository includes `evidence_review_labeled.csv` and `recommendation_ratings_labeled.csv`. These completed files support an optional analysis of evidence support and recommendation quality. They are not required for the main workflow, interactive demo, or classification evaluation.
+The repository includes `evidence_review_labeled.csv` and `recommendation_ratings_labeled.csv` in the `Outputs` folder. These completed files support an optional analysis of evidence support and recommendation quality. They are not required for the main workflow, interactive demo, or classification evaluation.
 
 The human-evaluation code cell appears immediately after **Usefulness of the recommendations** and before **Failure analysis**. It begins with:
 
